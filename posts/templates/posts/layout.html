@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--materialize css-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	<!-- font -->
+	<link rel='stylesheet' href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack-subset.css'>
+	<style>
+
+		body {
+			  font-family: 'Hack';
+			  src: url('fonts/hack-regular.woff2?sha=3114f1256') format('woff2'), url('fonts/hack-regular.woff?sha=3114f1256') format('woff');
+			  font-weight: 400;
+			  font-style: normal;
+			  background-color: #32373E;
+		}
+		pre {
+		  font-size: 1vmin;
+		  font-weight: bold;
+		}
+		.column {
+		    float: left;
+		    width: 33.33%;
+		    text-align:center;
+		}
+		.column-half {
+		    float: left;
+		    width: 50%;
+		    text-align:center;
+		}
+
+		.row:after {
+		    content: "";
+		    display: table;
+		    clear: both;
+
+		}
+
+		.collection, .collection-item, .a {
+			font-size: 14px;
+			
+			background-color: #6e728c !important;
+
+		}
+
+		.white-text{
+			color: #f8f8f2;
+		}
+
+		.link-text{
+			color: #f0f1f4;
+		}
+
+		.grey-text{
+			color: #e2e3e9;
+		}
+
+		.light-grey-text{
+			color: #a8abbd;
+		}
+
+		.bg-light-grey{
+			background-color: #44475a;
+		}
+
+		.bg-lighter-grey{
+			background-color: #a8abbd;
+		}
+
+		.italic {
+			font-style: italic;
+		}
+
+		.btn:hover{
+    		background: #44475a;  
+    	}
+
+    	.pagination{
+    		text-align: center;
+    	}
+
+    	.pagination li.active {
+    		font-weight: 1000;
+    		color: #262626 ;
+    		font-size: 18px;
+    		background-color: #e2e3e9;
+    		padding-top: 3px;
+    		padding-left: 10px;
+    		padding-right: 10px;
+		}
+
+    	a {
+		    color: #f0f1f4 !important;
+		}
+
+	</style>
+	<title> OPRacoon </title>
+</head>
+<body>
+
+<header class="container center-align">
+	<p ><pre class ="white-text">                  @@                   .                                       @@                  
+                  @@@@@                *%%%%%%%%%%%%%%%%%%%#                @@@@@*                 
+                  @@@@@@@        #%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%        @@@@@@@%                 
+                  @@@@@@@@@       %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%      .@@@@@@@@,                 
+                  @@@@@%%%%@.    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%     @%%%%@@@@@                  
+                  ,@@@@@%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%@@@@@@                  
+              .    @@&%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%@@                   
+                    @@%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%@@@                   
+                    &%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%@                    
+                    %%%%%%@@@@@@%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%@@@@@@@%%%%%                    
+                   %%%%%%%%@@@@@@@@@@%%%%%@@%%%%%*%%%%%&@%%%%%@@@@@@@@@@%%%%%%%%                   
+                  ,%%@@@@@@@@@@@@@@@@@@@@%@@@@@%% %%@@@@@%%@@@@@@@@@@@@@@@@@@@@%%                  
+                 .%%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ .@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%                 
+                %%%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%%                
+             .%%%%@@@@          #@@@@@%@@@@@@@@@   &@@@@@@@@@@@@@@@          @@@@%%%%%             
+   %%%%%%%%%%%%%@@@@@@              @@ (@@@@@@@.    @@@@@@@@ @@*             ,@@@@@%%%%%%%%%%%%%   
+   %%%%%%%%%&@@@@@@@.                    @@@@@@     .@@@@@.                    @@@@@@@@%%%%%%%%%   
+    %%@@@@@@@@@@@@                         @@@       @@@&                        @@@@@@@@@@@@%%% . 
+    @%@@@@@@@%                                                                       ,@@@@@@@%@    
+  .  @@@@@@                                                                             @@@@@@, .  
+      @@@@@@                ,@@&                                   /@@@                @@@@@@.     
+       @@@@@@                  @@@@@@@.      %%%%%%%%%%      @@@@@@@.                 @@@@@@       
+    *   (@@@@@                    @@@@%     @@@%%%%%%@@      @@@@#                   @@@@@@        
+     %%%%%@@@@@@                           @@@@@%%%%@@@@@                           @@@@@%%%%%     
+      .%%%%%@@@@@                        #@@@@@@@%%@@@@@@@                        @@@@@%%%%%%      
+        %%%%%%@@@@@                   %  @@@@@@@@@@@@@@@@@@                     @@@@@%%%%%%        
+          %%%%%%%@@@@,               .@ @@@@@@@@@@@@@@@@@@@.@@                @@@@%%%%%%%%         
+           .%%%%%%%%@@@@             @@@@@@@@@@@@@@@@@@@@@@@@@             &@@&%%%%%%%%%           
+          .   %%%%%%%%%%%%@,        .@@@@@@@@@@*    @@@@@@@@@@&         &%%%%%%%%%%%%.  .          
+                 %%%%%%%%(           @@@@@@@@&  %%%%  @@@@@@@@@          .%%%%%%%%.                
+                     %%%%%%%%%%%%%%  @@@@@@@@@        @@@@@@@@& %%%%%%%%%%%%%%/                    
+                            *%%%%%%* @@@@@@@@@@(    @@@@@@@@@@  %%%%%%/.                           
+                          %%%%%%%%%%  @@@@@@@@@@@@@@@@@@@@@@@  %%%%%%%%%%                          
+                                       @@@@@@,        @@@@@@                                       
+                                         #               @                                         
+</pre></p>
+</header>
+
+<div class = "container">
+	{% block content %}
+	{% endblock %}
+
+	<br>
+	<a style = "display:block" href = "/admin" class = "center-align grey-text"> Admin Login </a>
+</div>
+
+</body>
+</html>

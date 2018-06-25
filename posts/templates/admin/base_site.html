@@ -1,0 +1,27 @@
+{% extends "admin/base.html" %}
+
+{% block title %}OPRacoon Admin Page{% endblock %}
+{% block extrastyle %}
+<style type="text/css">
+	#header, .module h2, .module caption, .inline-group h2 {
+		background-color: #44475a;
+	}
+
+	.button, input[type=submit], input[type=button], .submit-row input, a.button {
+		background-color: #44475a;
+	}
+
+	.button:hover {
+		background: #44475a;  
+	}
+
+	#branding h1, #branding h1 a:link, #branding h1 a:visited {
+    color: #f0f1f4;
+	}
+</style>
+{% endblock %}
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">OPRacoon Admin Page</a></h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
